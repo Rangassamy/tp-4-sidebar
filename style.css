@@ -12,9 +12,9 @@ body {
   color: #09fbba;
   transition: 1s;
 }
-.content-disappear {
+/* .content-disappear {
   opacity: 0.2;
-}
+} */
 
 h1 {
   text-transform: uppercase;
@@ -25,10 +25,6 @@ h1 {
 p {
   padding: 30px 50px;
 }
-.sidebar-appear {
-  transform: translateX(230px);
-}
-
 #side-bar {
   position: absolute;
   width: 230px;
@@ -67,4 +63,29 @@ li {
 li:hover {
   background: #292929;
   color: #fcfcfb;
+}
+
+/* .sidebar-appear {
+    left: 0 !important;
+  } */
+
+#side-bar.sidebar-appear {
+  left: 0;
+}
+
+.sidebar-appear span {
+  position: absolute;
+}
+.sidebar-appear span:nth-child(1) {
+  transform: rotate(45deg);
+}
+.sidebar-appear span:nth-child(2) {
+  opacity: 0;
+}
+.sidebar-appear span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.sidebar-appear ~ .content {
+  opacity: 0.2;
 }

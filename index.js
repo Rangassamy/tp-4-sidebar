@@ -15,10 +15,10 @@ const content = document.querySelector(".content");
 
 btn.addEventListener("click", () => {
   sidebar.classList.toggle("sidebar-appear");
-  content.classList.toggle("content-disappear");
+  //   content.classList.toggle("content-disappear");
 });
 
 content.addEventListener("click", () => {
   sidebar.classList.remove("sidebar-appear");
-  content.classList.remove("content-disappear");
+  //   content.classList.remove("content-disappear");
 });
